@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category-select</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container category">
+        <div class="category--user">
+            <h3 class="category--user__header">Please Enter your name</h3>
+            <input type="text" class="category--user__input">
+        </div>
+
+        <div class="category--category-select">
+            <h3 class="category--category-select__header">Choose Your Preferred Category</h3>
+            <div class="category--category-select__grid">
+                <div class="category--category-select__grid-card">
+                    <p class="category-value">General Knowledge</p>
+                </div>
+                <div class="category--category-select__grid-card">
+                    <p class="category-value">Music</p>
+                </div>
+                <div class="category--category-select__grid-card">
+                    <p class="category-value">Television</p>
+                </div>
+                <div class="category--category-select__grid-card">
+                    <p class="category-value">Science</p>
+                </div>
+            </div>
+            <p class="error hidden">
+                error
+            </p>
+        </div>
+        <button class="btn category--start">Start Quiz</button>
+    </div>
+
+
+    <div class="container quiz hidden">
+        <div class="quiz--load">
+            <img src="./img/load.jpg" alt="" class="quiz--load_img">
+            <h2 class="quiz--load_header">Efile Eje ko load</h2>
+            <h1 class="dot one">.</h1>
+            <h1 class="dot two">.</h1>
+            <h1 class="dot three">.</h1>
+        </div>
+
+
+
+
+        <div class="quiz--main hidden">
+            <div class="current">
+                <span>Current-Player:</span>
+                <h1 class="user-name"></h1>
+            </div>
+            <span class="question-number">Question </span>
+            <!-- Question  -->
+            <h2 class="quiz--main_question"></h2>
+
+            <!-- list of options -->
+            <div class="quiz--main_container">
+                <p class="quiz--main_container--prefix">A</p>
+                <p class="quiz--main_container--text" data-number="1"></p>
+            </div>
+            <div class="quiz--main_container">
+                <p class="quiz--main_container--prefix">B</p>
+                <p class="quiz--main_container--text" data-number="2"> </p>
+            </div>
+            <div class="quiz--main_container">
+                <p class="quiz--main_container--prefix">C</p>
+                <p class="quiz--main_container--text" data-number="3"></p>
+            </div>
+            <div class="quiz--main_container">
+                <p class="quiz--main_container--prefix">D</p>
+                <p class="quiz--main_container--text" data-number="4"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

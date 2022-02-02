@@ -1,0 +1,14 @@
+{
+  "name": "final-quiz",
+  "version": "1.0.0",
+  "description": "A quiz app that fetches question from an api",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass" : "node-sass sass/main.scss  css/style.css -w"
+  },
+  "author": "Khalid",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

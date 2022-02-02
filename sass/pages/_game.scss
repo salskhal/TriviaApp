@@ -1,0 +1,95 @@
+.quiz {
+    &--load {
+        text-align: center;
+
+        &_img {
+            width: 8rem;
+        }
+
+        &_header {
+            color: $white;
+        }
+
+        .dot {
+            display: inline;
+            position: relative;
+            font-size: 3.5em;
+            opacity: 0;
+            animation: showHideDot 1.5s ease-in-out infinite;
+            color: $white;
+            top: -2rem;
+
+            &.one {
+                animation-delay: 0.2s;
+            }
+
+            &.two {
+                animation-delay: 0.4s;
+            }
+
+            &.three {
+                animation-delay: 0.6s;
+            }
+        }
+
+        @keyframes showHideDot {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            60% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+
+    &--main {
+        &_question{
+            font-size: 2rem;
+            color: $white;
+            margin-bottom: 2rem;
+        }
+        &_container {
+            display: flex;
+            margin-bottom: 0.5rem;
+            width: 100%;
+            font-size: 1.8rem;
+            border: 0.1rem solid $stone;
+            background-color: white;
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+                transform: translateY(-0.1rem);
+                transition: transform 150ms;
+            }
+
+            &--prefix {
+                padding: .7rem 1.5rem;
+                background-color: $seafoam;
+                color: $white;
+            }
+            .true{
+                background-color: green;
+            }
+
+            .false{
+                background-color: red;
+            }
+
+            &--text {
+                padding: 1rem;
+                width: 100%;
+                color: $seafoam;
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+.category {
+    width: 80%;
+    // background: pink;
+    text-align: center;
+
+    &--user {
+        margin-bottom: 20px;
+
+        &__header {
+            font-size: 2rem;
+            color: $white;
+            margin-bottom: 20px;
+        }
+
+        &__input {
+            padding: .4rem .6rem;
+            width: 50%;
+            // border-radius: 10px;
+            border: none;
+            font-size: 1.6rem;
+            outline: none;
+
+            &:focus {
+                border: .1rem solid $stone;
+            }
+        }
+    }
+
+    &--category-select {
+        // background: purple;
+        width: 60%;
+        margin-inline: auto;
+
+        &__header {
+            font-size: 1.5rem;
+            color: $white;
+            margin-bottom: 20px;
+        }
+
+        &__grid {
+            display: grid;
+            // background: pink;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+
+            &-card {
+                background: $seafoam;
+                padding: 20px;
+                color: $white;
+                font-size: 1.2rem;
+                cursor: pointer;
+
+                &:hover {
+                    color: $seafoam;
+                    background: $white;
+                }
+            }
+        }
+    }
+
+    &--start{
+        margin-top: 20px;
+        background: $white;
+        color: $stone;
+        &:hover{
+            background: $stone;
+            color: $white;
+        }
+    }
+}
+
+.selected {
+    color: $seafoam;
+    background: white;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .category {
+        width: 90%;
+
+        &--category-select {
+            width: 70%;
+
+            &__header {
+                font-size: 1rem;
+            }
+
+            &__grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .category {
+        width: 90%;
+
+        &--category-select {
+            width: 80%;
+
+            &__header {
+                font-size: 1rem;
+            }
+
+            &__grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

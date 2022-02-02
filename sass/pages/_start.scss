@@ -1,0 +1,9 @@
+.start {
+    text-align: center;
+    
+    &--header {
+        color: $white;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
