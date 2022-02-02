@@ -122,7 +122,7 @@ function startGame() {
 
 let questionCounter = 0
 
-const MAX_QUESTION = 3
+const MAX_QUESTION = 10
 const BONUS_POINT = 10
 
 
